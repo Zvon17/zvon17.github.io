@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta id="myViewport" name="viewport" content="width=device-width">
+<script>
+    if(screen.width <= 600) {
+        var mvp = document.getElementById('myViewport');
+        mvp.setAttribute('content','width=500');
+    };
+    if(screen.width >= 601) {
+        var mvp = document.getElementById('myViewport');
+        mvp.setAttribute('content','width=1200, initial-scale=0.50, maximum-scale=0.50, minimum-scale=0.50, user-scalable=no');
+    };
+    
+    window.onorientationchange = function () {
+        var orientation = window.orientation;
+        switch (orientation) {
+            case 0:
+            case 90:
+            case -90:
+                window.location.reload();
+                break;
+        }
+    };
+    
+</script>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Автокомплекс</title>
+	<link href="https://fonts.googleapis.com/css?family=Play:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Prosto+One&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css?v=1.0.3">
+	<link rel="stylesheet" href="./css/plus.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+
+			<div class="header-wrap grid">
+
+				<div class="header-contacts">
+					<div class="header-contacts__phone">
+						<img src="./img/contacts/contacts-1.png" alt="watsapp" class="icon-watsapp">
+						<a href="tel:+79103653939">+7-910-365-39-39</a>
+					</div>
+
+					<div class="header-contacts__phone">
+						<img src="./img/contacts/contacts-2.png" alt="watsapp" class="icon-watsapp">
+						<a href="tel:+79103646625">+7-910-364-66-25 </a>
+					</div>
+
+					<div class="header-contacts__adress">
+						<img src="./img/contacts/contacts-3.png" alt="watsapp" class="icon-watsapp">
+						<a target="_blank" href="https://yandex.ua/maps/4/belgorod/house/ulitsa_lermontova_49a/Z08YcwFjQEQGQFtqfXl2dnxrYQ==/?ll=36.563911%2C50.577085&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16"> г.Белгород, ул. Лермонтова 49а,  автопаркинг </a>
+					</div>
+				</div>
+
+
+				<a href="#" class="menu-burger">
+					<img src="img/header/burger.png" alt="">
+				</a>
+
+				<div class="menu">
+					<ul>
+						<li><a href="#prices">Цены</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+						<li><a href="#chemest">Химчистка</a></li>
+					</ul>
+				</div>
+
+				<!-- <a href="#" class="menu-btn">
+					<span></span>
+				</a> -->
+
+			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+
+
+
+			<div class="header-logo">
+				<img src="./img/header/logo.png" alt="Маяк-мойка">
+			</div>
+
+			<h1 class="header-title"><br></h1>
+
+		</div>
+	</header>
+
+	<section role="main">
+
+		<section class="facts">
+			<div class="container">
+
+				<h2 class="section-title facts-title">Факты</h2>
+
+				<div class="facts-wrap grid">
+					<div class="facts-block">
+						<div class="facts-block__img facts-block__img-1"></div>
+						<p class="facts-block__descr">Качество прежде всего</p>
+					</div>
+					<div class="facts-block">
+						<div class="facts-block__img facts-block__img-2"></div>
+						<p class="facts-block__descr">Моем строго по трехфазной технологии</p>
+					</div>
+					<div class="facts-block">
+						<div class="facts-block__img facts-block__img-3"></div>
+						<p class="facts-block__descr">Используем химию исключительно топ-уровня</p>
+					</div>
+					<div class="facts-block">
+						<div class="facts-block__img facts-block__img-4"></div>
+						<p class="facts-block__descr">Автосервис с безупречной репутацией</p>
+					</div>
+					<div class="facts-block">
+						<div class="facts-block__img facts-block__img-5"></div>
+						<p class="facts-block__descr">Только <br> высококачественное <br> оборудование</p>
+					</div>
+					<div class="facts-block">
+						<div class="facts-block__img facts-block__img-6"></div>
+						<p class="facts-block__descr">Можно <br> оставить автомобиль</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="category">
+			<div class="container">
+				<h2 class="section-title category-title">Мы делим автомобили на три категории</h2>
+
+
+				<div class="category-wrap grid">
+
+					<div class="category-block">
+						<div class="category-block__img category-block__img-1"></div>
+						<p class="category-block__descr"><span class="section-title">1.</span> Хетчбеки, компактные седаны и купе</p>
+					</div>
+
+					<div class="category-block">
+						<div class="category-block__img category-block__img-2"></div>
+						<p class="category-block__descr"><span class="section-title">2.</span> Средние седаны и кроссоверы</p>
+					</div>
+
+					<div class="category-block">
+						<div class="category-block__img category-block__img-3"></div>
+						<p class="category-block__descr"><span class="section-title">3.</span> Внедорожники, большие седаны и&nbsp;суперкары</p>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="prices" id="prices">
+
+			<div class="container">
+				<h2 class="section-title prices-title">Прайс-лист</h2>
+
+				<div class="prices-daily">
+
+					<div class="price-title price-wrap">
+						<div class="prices-die">
+							<div class="prices-die__rectangle"></div>
+							<div class="prices-die__triangle"></div>
+						</div>
+						<h3 class="price-title prices-daily__title">Регулярные процедуры автомойки</h3>
+						<div class="price-numbers">
+							<p>1</p>
+							<p>2</p>
+							<p>3</p>
+						</div>
+					</div>
+					<ul class="price-list">
+						<li>
+							<div class="text">Супер экспресс</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">200</div>
+								<div class="price-item">250</div>
+								<div class="price-item">300</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Экспресс</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">250</div>
+								<div class="price-item">300</div>
+								<div class="price-item">350</div>
+							</div>
+						</li>
+                        <li>
+							<div class="text">Комплекс</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">400</div>
+								<div class="price-item">500</div>
+								<div class="price-item">650</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Полный комплекс</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">650</div>
+								<div class="price-item">800</div>
+								<div class="price-item">1000</div>
+							</div>
+						</li>
+
+						<br>
+
+							<div class="price-title price-wrap">
+						<div class="prices-die">
+							<div class="prices-die__rectangle"></div>
+							<div class="prices-die__triangle"></div>
+						</div>
+						<h3 class="price-title prices-daily__title">Дополнительные услуги автомойки</h3>
+						<div class="price-numbers">
+							<p>1</p>
+							<p>2</p>
+							<p>3</p>
+						</div>
+					</div>
+						<li>
+							<div class="text">Уборка багажного отсека</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Кондиционер кожи<br>
+						                           </div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+								<div class="price-item">150</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Пылесос салона<br>
+								</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+								<div class="price-item">150</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Влажная уборка салона<br>
+								</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Очистка стёкл изнутри</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Чернение резины</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Очистка битумных пятен, за деталь</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+							</div>
+						</li>
+                        <li>
+							<div class="text">Мойка двигателя с моющими средствами</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">250</div>
+								<div class="price-item">250</div>
+								<div class="price-item">250</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Химчистка дисков (за четыре)</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">150</div>
+								<div class="price-item">150</div>
+								<div class="price-item">150</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Полировка пластика салона</div>
+								<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">150</div>
+								<div class="price-item">150</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Нанесение силикона на уплотнители дверей</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">50</div>
+								<div class="price-item">100</div>
+								<div class="price-item">100</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Смазка замков дверей </div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">50</div>
+								<div class="price-item">50</div>
+								<div class="price-item">50</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Мойка уксусом</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">150</div>
+								<div class="price-item">200</div>
+							</div>
+						</li>
+                                                <li>
+							<div class="text">Нанесение воска на кузов</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">100</div>
+								<div class="price-item">150</div>
+								<div class="price-item">200</div>
+							</div>
+						
+							
+				</div>
+
+				<section class="chemest" id="chemest">
+<br>
+				<div class="chemest">
+
+					<div class="price-title price-wrap">
+							<div class="prices-die prices-die__salon">
+									<div class="prices-die__rectangle"></div>
+									<div class="prices-die__triangle"></div>
+								</div>
+						<h3 class="price-title prices-daily__title">Салон - химчистка</h3>
+						<div class="price-numbers price-numbers__salon">
+							<p>1</p>
+							<p>2</p>
+							<p>3</p>
+						</div>
+					</div>
+
+					<ul class="price-list price-list__salon">
+						<li>
+							<div class="text">Комплексная</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 3000</div>
+								<div class="price-item">от 4000</div>
+								<div class="price-item">от 5000</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Руль</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 100</div>
+								<div class="price-item">от 100</div>
+								<div class="price-item">от 100</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Подлокотник</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 100</div>
+								<div class="price-item">от 100</div>
+								<div class="price-item">от 100</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Карта двери (за одну)</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 250</div>
+								<div class="price-item">от 250</div>
+								<div class="price-item">от 250</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Потолок</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 1000</div>
+								<div class="price-item">от 1500</div>
+								<div class="price-item">от 1500</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Ковровое покрытие</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 1000</div>
+								<div class="price-item">от 1500</div>
+								<div class="price-item">от 1500</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Переднее сиденье (за одно)</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 300</div>
+								<div class="price-item">от 300</div>
+								<div class="price-item">от 300</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Задний ряд сидений</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 700</div>
+								<div class="price-item">от 700</div>
+								<div class="price-item">от 700</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Багажный отсек</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 500</div>
+								<div class="price-item">от 500</div>
+								<div class="price-item">от 500</div>
+							</div>
+						</li>
+						<li>
+							<div class="text">Локальная химчистка (удаление пятен)</div>
+							<div class="border"></div>
+							<div class="price">
+								<div class="price-item">от 100</div>
+								<div class="price-item">от 100</div>
+								<div class="price-item">от 100</div>
+							</div>
+						</li>
+						
+					</ul>
+				
+
+				</div>
+
+				
+					
+						
+
+			</div>
+		</section>
+
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<h2 class="section-title contacts-title">Контакты</h2>
+
+				<div class="contacts-wrap grid">
+
+					<div class="contacts-text">
+
+						<div class="contacts-block grid">
+
+							<div class="contacts-block__one">
+								<div class="contacts-block__row">
+									<img src="./img/contacts/contacts-1.png" alt="phone number">
+									<a href="tel:+74957210818" class="contacts-block__descr">+7-910-365-39-39</a>
+								</div>
+
+								<div class="contacts-block__row">
+									<img src="./img/contacts/contacts-2.png" alt="watsapp">
+									<a href="tel:+79037210818" class="contacts-block__descr">+7-910-364-66-25</a>
+								</div>
+
+								<div class="contacts-block__row">
+									<img src="./img/contacts/contacts-3.png" alt="adress">
+									<a target="_blank" href="https://yandex.ua/maps/4/belgorod/house/ulitsa_lermontova_49a/Z08YcwFjQEQGQFtqfXl2dnxrYQ==/?ll=36.563911%2C50.577085&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16" class="contacts-block__descr"> г.Белгород, ул. Лермонтова, 49а,  автопаркинг </a>
+								</div>
+							</div>
+							<br>
+
+							<div class="contacts-chart__wrap grid">
+							<div class="contacts-chart">
+								<img src="img/contacts/contacts-chart.png" alt="">
+								<p class="contacts-chart__descr">
+									График работы автомойки: <br>Пн - Пт: 9:00 - 20:00
+									Сб - Вс: 10:00 - 20:00
+								</p>
+
+							
+
+
+							</div>
+
+
+								
+							</div>
+
+						</div>
+
+						<div class="contacts-chart__wrap grid">
+							<div class="contacts-chart">
+								<img src="img/contacts/contacts-chart.png" alt="">
+								<p class="contacts-chart__descr">
+									График работы автосервиса: <br>Пн - Пт: 8:00 - 18:00
+									Сб - Вс: 8:00 - 15:00
+								</p>
+
+							
+
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="contacts-map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af199bdf28cfc8199dc6fecc5880e03b64608123bd493531148692f81e7b6071d&amp;width=649&amp;height=378&amp;lang=ru_RU&amp;scroll=true"></script>
+						<p>Въезд с улицы Лермонтова , перед магазином Магнит направо к автопаркингу. Скажите охраннику, что вы на мойку и далее по нашим указателям
+							(мойка располагается на -1 этаже подземного паркинга)</p>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="contacts-die"></div>
+		</section>
+
+	</section>
+
+
+	<script src="js/main.js"></script>
+
+	<script>
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () {
+				(m[i].a = m[i].a || []).push(arguments)
+			};
+			m[i].l = 1 * new Date();
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+				a)
+		})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(54824092, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/54824092" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+
+</body>
+
+</html>
